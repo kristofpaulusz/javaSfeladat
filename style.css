@@ -1,0 +1,15 @@
+#kepek {
+    display: flex;
+    flex-wrap: wrap;
+}
+#galeria img {
+    width: 500px;
+}
+#galeria {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#galeria p, img, h1 {
+    margin: auto;
+}
