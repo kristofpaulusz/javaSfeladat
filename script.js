@@ -11,11 +11,26 @@ var kep = [
     ar: 15000,
     eleresiut: "picks/kutyak.jpg",
   }),
-  (kep2 = {
+  (kep3 = {
     cim: "Kerekek",
     ar: 12000,
     eleresiut: "picks/kerekek.jpg",
   }),
+  (kep4 = {
+    cim: "Bicigli",
+    ar: 13000,
+    eleresiut: "picks/bici.jpg",
+  }),
+  (kep5 = {
+    cim: "Sün",
+    ar: 7000,
+    eleresiut: "picks/sün.jpg",
+  }),
+  (kep6 = {
+    cim: "Térkép",
+    ar: 15000,
+    eleresiut: "picks/us_terkep.png",
+  })
 ];
 function ID(elem) {
   return document.getElementById(elem);
@@ -24,9 +39,9 @@ function galeria() {
   var txt = "";
   for (let index = 0; index < kep.length; index++) {
     txt +=
-      "<div><h1>" +
+      "<div><h3>" +
       kep[index].cim +
-      '</h1><img src="' +
+      '</h3><img src="' +
       kep[index].eleresiut +
       '" alt=""/img><p>' +
       kep[index].ar +
@@ -35,33 +50,7 @@ function galeria() {
   ID("galeria").innerHTML = txt;
 }
 
-function kiir() {
-  var txt = "";
-  for (let index = 0; index < kep.length; index++) {
-    txt += "<h2>" + kep[index].cim + "</h2>";
-  }
-  ID("galeria").innerHTML = txt;
-}
-function arak() {
-  var txt = "<ul>";
-  for (let index = 0; index < kep.length; index++) {
-    txt += "<li>" + kep[index].ar + " Ft </li>";
-  }
-  txt += "</ul>";
-  ID("arak").innerHTML = txt;
-}
-function kepek() {
-  var txt = "";
-  for (let index = 0; index < kep.length; index++) {
-    txt += '<img src="' + kep[index].eleresiut + '" alt=""/img>';
-  }
-  ID("kepek").innerHTML = txt;
-}
 function init() {
   ID("title").innerHTML = "<h1>Galéria:</h1>";
-  /*kiir();
-  arak();
-  kepek();*/
   galeria();
 }
-('""');

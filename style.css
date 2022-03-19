@@ -1,15 +1,15 @@
-#kepek {
-    display: flex;
-    flex-wrap: wrap;
-}
 #galeria img {
     width: 500px;
+}
+body {
+    margin: auto;
+    width: 80%;
+    
 }
 #galeria {
     
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-#galeria p, img, h1 {
-    margin: auto;
+    text-align: center;
+    background-color: aquamarine;
 }
